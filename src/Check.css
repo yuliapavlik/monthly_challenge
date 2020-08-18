@@ -1,0 +1,30 @@
+.yuut {
+    background-color: gainsboro;
+    border: none;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    outline: none;
+
+}
+.check {
+    display: flex;
+    width: 600px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+
+
+
+}
+body {
+    text-align: center;
+    background-image: url(background2.jpg);
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+
+}
