@@ -1,6 +1,6 @@
 import React from "react";
 import tick from "./tick-mark.png";
-import './Check.css';
+
 
 
 class Check extends React.Component  {
@@ -14,7 +14,7 @@ class Check extends React.Component  {
     handleClick() {
         this.setState(()=> {
             return {
-                value: <img style={{width: 50, height: 60}} src={tick} alt="tick"/>
+                value: <img style={{width: 50, height: 60, filter: "contrast(0.3)"}}  src={tick} alt="tick"/>
             }
         })
     }
@@ -31,5 +31,6 @@ class Check extends React.Component  {
     }
 
 }
+
 
 export default Check

@@ -1,30 +1,57 @@
 .yuut {
     background-color: gainsboro;
     border: none;
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     text-align: center;
     outline: none;
+    margin: 15px;
 
+
+
+
+}
+.image {
+  padding-right: 200px;
 }
 .check {
     display: flex;
-    width: 600px;
+    width: 900px;
+
 
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
+   margin: 0 auto;
+
+}
 
 
+
+
+
+.header {
+
+    padding-bottom: 50px;
+    padding-top: 40px;
+    font-family: Poppins-Regular;
+    font-size: 20px;
+    color: #555555;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    display: block;
 
 }
 body {
+
     text-align: center;
     background-image: url(background2.jpg);
     background-repeat: no-repeat;
 
-    background-position: center;
+   height: 100%;
+   background-position: center;
 
 
 }

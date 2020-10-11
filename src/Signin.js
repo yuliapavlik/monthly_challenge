@@ -1,4 +1,7 @@
 import React from "react"
+import './Signin.css';
+import {Link} from "react-router-dom";
+
 
 
 class Signin extends React.Component {
@@ -24,16 +27,32 @@ class Signin extends React.Component {
     }
     render() {
         return (
+            <div className="container">
+            <div className="container-login">
+            <div className="limited">
+
             <form className="form-signin">
-                <h2 className="form-signin-heading"> Please sign in </h2>
-                <label for="inputEmail" className="sr-only"> Email address
-                </label>
+                <p className="form-title"> Account Login </p>
+                <div className="validate-input">
+                <div className="wrap-input100 rs1-wrap-input100">
                 <input type="email" id="inputEmail" className="form-control" onChange={this.handleEmailChange} placeholder="Email address" required autofocus />
-                <label for="inputPassword" className="sr-only"> Password</label>
+                </div>
+                <div className="wrap-input100 rs2-wrap-input100">
                 <input type="password" id="inputPassword" className="form-control" onChange={this.handlePasswordChange} placeholder="Password" required />
-                <button className="btn btn-lg btn-primary btn-block" onClick={this.signIn} type="button"> Sign in
-                </button>
+                </div>
+                </div>
+
+                <div className="container-btn">
+                    <Link to="/main">   <button  className="btn" onClick={this.signIn} type="button"> Sign in
+                </button> </Link>
+                </div>
+
             </form>
+                <div className="login"/>
+
+            </div>
+            </div>
+            </div>
         )
     }
 }
