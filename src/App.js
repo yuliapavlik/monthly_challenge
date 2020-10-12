@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
-
 import Signin from "./Signin";
 import Signup from "./Signup";
 import Main from "./Main";
-
-
-
 import  './oldi.css';
 import './Signin.css';
-
 import {
 	BrowserRouter,
 	Switch,
@@ -27,7 +22,7 @@ class App extends Component {
 	}
 
 	callAPI() {
-	    fetch("http://localhost:9000/testAPI")
+	    fetch("http://localhost:4000/")
 		.then(res => res.text())
 		.then(res => this.setState({ apiResponse: res }));
 	}
