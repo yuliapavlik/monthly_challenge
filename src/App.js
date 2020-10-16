@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import Signin from "./Signin";
-import Signup from "./Signup";
+// import Signup from "./Signup";
 import Main from "./Main";
 import  './oldi.css';
 import './Signin.css';
 import {
 	BrowserRouter,
-	Switch,
+	// Switch,
 	Route,
-	Link,
-	Redirect,
-	useHistory,
-	useLocation
+	// Link,
+	// Redirect,
+	// useHistory,
+	// useLocation
 } from "react-router-dom";
 
 class App extends Component {
@@ -33,16 +33,12 @@ class App extends Component {
 
 	render() {
         return (
-
             <div>
 				<BrowserRouter>
 					<Route exact path="/" component={Signin} />
 					<Route exact path="/main" component={Main} />
 				</BrowserRouter>
-				{/*<p className="App-intro">;{this.state.apiResponse}</p>*/}
             </div>
-
-
         )
     }
 }

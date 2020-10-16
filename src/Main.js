@@ -1,5 +1,5 @@
 import React from 'react';
-import Check from "./Check";
+// import Check from "./Check";
 import './Check.css';
 import Header from "./Header";
 import  Checks from "./ Checks";
